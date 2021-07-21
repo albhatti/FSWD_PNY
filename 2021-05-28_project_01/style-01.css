@@ -1,0 +1,179 @@
+/*
+Q- On my laptop i am getting a scroll bar on the right as the image is slightly beggier than the view height and i am not able to adjust it. 
+*/
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    background-image: url(pexels-pixabay-33545.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 90%;
+    margin: 1rem auto 0;
+    background-color: rgba(138, 43, 226, 0.5);
+}
+
+.txt-upper-case {
+    text-transform: uppercase;
+}
+
+
+/*
+Q- under logo there is some padding. Why?
+*/
+
+.logo img {
+    height: 6rem;
+}
+
+.nav-bar {
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-style-none {
+    list-style: none;
+}
+
+
+/* main nav*/
+
+.toggle-fa {
+    margin-left: 10px;
+}
+
+
+/*
+Q- there is spacing between nav items (list items) if we keep it as inline. Why?
+*/
+
+.main-nav-item {
+    font-size: 1rem;
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+}
+
+.main-nav-item>a {
+    padding: 10px;
+    border-top: 2px solid cornflowerblue;
+    border-right: 1px solid cornflowerblue;
+    border-left: 2px solid cornflowerblue;
+    border-bottom: 2px solid black;
+    text-decoration: none;
+    color: rgb(180, 180, 180);
+}
+
+
+/*
+Q- how to apply same decleration for on focus?*/
+
+.main-nav-item:hover>a {
+    border-left: 2px solid transparent;
+    border-top: 2px solid transparent;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+
+/*nav item having  dropdown*/
+
+.nav-item-dd {
+    position: relative;
+}
+
+.nav-item-dd:hover .secondary-nav-menu {
+    border-top: 0 solid none;
+    border-bottom: 0 solid none;
+    visibility: visible;
+    background-color: rgba(138, 43, 226, 0.5);
+}
+
+
+/* secondary nav*/
+
+
+/*
+Q- if top margin is removed from .secondary-nav-menu, why does it move up?
+
+Q- If the margin is for eample 12 and above hover does not work,why?
+
+Q- how to align the items in dropdown in center of main nav item
+*/
+
+.secondary-nav-menu {
+    text-align: center;
+    position: absolute;
+    margin-top: 10px;
+    visibility: hidden;
+}
+
+.main-nav-item:hover .toggle-fa,
+.secondary-nav-menu a:hover .toggle-fa {
+    visibility: hidden;
+}
+
+.secondary-nav-menu a {
+    display: block;
+    text-decoration: none;
+    color: rgb(180, 180, 180);
+    position: relative;
+    border-top: 3px dotted none;
+    border-left: 3px dotted none;
+    border-right: 3px dotted none;
+    border-bottom: 3px dotted none;
+}
+
+.secondary-nav-menu a:hover {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+/*
+Q- how to add transition for backgrund color on hover
+*/
+
+.secondary-nav-menu a:hover::after {
+    box-sizing: border-box;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-top: 3px dashed rgba(138, 43, 226, 0.5);
+    border-left: 3px dashed rgba(138, 43, 226, 0.5);
+    border-right: 3px dashed rgba(138, 43, 226, 0.5);
+    border-bottom: 3px dashed rgba(138, 43, 226, 0.5);
+    ;
+    /* border-left: 2px solid cornflowerblue; */
+    /* border-right: 2px solid cornflowerblue; */
+}
+
+.secondary-nav-menu>a {
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(180, 180, 180);
+}
+
+footer {
+    color: blanchedalmond;
+    font-size: .7rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+/* M. Akmal Bhatti */
