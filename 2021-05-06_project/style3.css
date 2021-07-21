@@ -1,0 +1,598 @@
+/* ++ start of global css setting.*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 40px;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+}
+
+.all-caps {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+button {
+    margin-top: 1em;
+    padding: 5px 10px;
+    border-radius: 50px;
+    border: none;
+}
+
+.section-top-padding {
+    padding-top: 3em;
+}
+
+.section-bottom-padding {
+    padding-bottom: 3em;
+}
+
+.green-btn {
+    background-color: rgb(120, 180, 50);
+    color: whitesmoke;
+}
+
+.white-btn {
+    background-color: whitesmoke;
+}
+
+.top-section,
+.offers,
+.blog,
+.stats,
+.contact-us {
+    color: white;
+}
+
+h2[class=all-caps] {
+    display: inline-block;
+    font-family: 'Girassol', cursive;
+    letter-spacing: .25em;
+    word-spacing: .50em;
+    position: relative;
+}
+
+h2[class=all-caps]::after {
+    content: "";
+    height: 3px;
+    background: white;
+    left: 3rem;
+    right: 3rem;
+    bottom: -10px;
+    position: absolute;
+    /* border: 3px black solid; */
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200, bold;
+    letter-spacing: .1em;
+}
+
+.intro,
+.portfolio {
+    text-align: center;
+    background-color: rgb(230, 230, 230)
+}
+
+.anchor-decoration a {
+    transition: 500ms ease-in;
+}
+
+.anchor-decoration a:hover {
+    text-decoration: none;
+}
+
+nav ul li {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+
+
+/* -- end of global css setting.*/
+
+
+/* ++ start of top secion */
+
+.top-section {
+    background-image: url(images/slide_01.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 46vh;
+    position: relative;
+}
+
+.section-body {
+    padding-top: 2em;
+}
+
+header {
+    padding: 1em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo {
+    flex: 0 1 30%;
+}
+
+header nav {
+    flex: 0 1 50%;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-section nav ul li {
+    position: relative;
+}
+
+.top-section nav ul li ::after {
+    position: absolute;
+    content: "";
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    background: white;
+    height: 3px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+}
+
+.top-section nav ul li:hover ::after {
+    background-color: green;
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.top-section a {
+    color: ivory;
+}
+
+.header-intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.header-intro .main-heading {
+    margin-bottom: 1em;
+}
+
+.header-intro p:first-of-type {
+    font-family: 'Dancing Script', cursive;
+}
+
+.header-intro h1 {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: .5em;
+    font-weight: lighter;
+}
+
+
+/* -- end of top secion */
+
+
+/* ++ start of summary secion */
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 9%;
+    padding-right: 9%;
+}
+
+.summary div {
+    margin-left: 30px;
+    flex-basis: 24%;
+    background-color: whitesmoke
+}
+
+.summary div:first-of-type {
+    margin-left: 0;
+}
+
+.summary h3 {
+    text-transform: capitalize;
+}
+
+.summary p {
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+
+/* ++ start of offer secion */
+
+.offers {
+    display: flex;
+    justify-content: space-between;
+    background-image: url(images/what-we-do-bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.offer-text {
+    flex-basis: 50%;
+    margin-left: 10%;
+}
+
+.offer-text h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    letter-spacing: .10em;
+}
+
+.offer-text h2:last-of-type {
+    margin-bottom: 10px;
+}
+
+.offer-text p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    letter-spacing: .06em;
+    line-height: 1.1em;
+    word-spacing: .02em;
+}
+
+.offer-text p:first-of-type {
+    margin-bottom: 10px;
+}
+
+.offer-pics {
+    flex-basis: 25%;
+    position: relative;
+    margin-right: 10%;
+}
+
+.offer-pics img {
+    position: absolute;
+}
+
+.offer-pics img:hover {
+    z-index: 10;
+    border: 10px solid blueviolet;
+}
+
+.pic1 {
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    width: 60%
+}
+
+.pic2 {
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    width: 60%
+}
+
+.pic3 {
+    bottom: 2.5em;
+    right: 0;
+    width: 60%
+}
+
+
+/* -- end of offer section */
+
+
+/* ++ start of Portfolio section.*/
+
+.portfolio nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.portfolio nav ul li {
+    position: relative;
+}
+
+.portfolio nav ul li a {
+    color: cornflowerblue;
+    transition: color .5s ease-in;
+}
+
+.portfolio nav ul li a:hover {
+    color: black
+}
+
+.portfolio nav ul li ::after {
+    position: absolute;
+    content: "";
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transform-origin: center center;
+    transition: transform .5s ease-in;
+}
+
+.portfolio nav ul li:hover ::after {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5));
+    transform: scale(1);
+    transform-origin: center center;
+}
+
+.portfolio-images {
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio-images img {
+    padding: 10px;
+    width: 250px;
+}
+
+.portfolio-header h2 {
+    margin-bottom: 20px;
+}
+
+
+/* -- end of Portfolio section.*/
+
+
+/* ++ start of blog section*/
+
+.blog {
+    text-align: center;
+    background-color: rgb(120, 180, 50);
+}
+
+.blogs {
+    overflow: auto;
+}
+
+.blog-1 img,
+.blog-2 img,
+.blog-3 img {
+    width: 300px;
+}
+
+.blog-1 {
+    padding-left: 17em;
+    float: left;
+}
+
+.blog-2,
+.blog-3 {
+    float: right;
+    padding-right: 17em;
+}
+
+.blog-post .blog-post-text {
+    width: 300px;
+}
+
+.blog-post-text p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+
+.blog-post-text {
+    background: black;
+    text-align: left;
+    /**/
+    position: relative;
+    transition: background-color .5s ease-in;
+}
+
+.blog-post-text:hover {
+    background: lightgreen;
+    color: black;
+}
+
+.blog-post-text::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: black;
+    transform: scale(0);
+    transition: all .7s ease-in;
+}
+
+.blog-post-text:hover:after {
+    z-index: -1;
+    color: black;
+    background: lightgreen;
+    transform: scale(1);
+    transform-origin: center center;
+}
+
+
+/* -- end of blog section*/
+
+
+/* ++ start of stats section*/
+
+.stats {
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.stats-counter {
+    text-align: center;
+    background-color: rgb(230, 230, 230);
+    flex-basis: 200px;
+}
+
+.stats-count {
+    padding: 10px;
+    color: rgb(120, 180, 50);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    letter-spacing: .1em;
+}
+
+.stats-name {
+    font-family: 'Krona One', sans-serif;
+    font-size: 11px;
+    letter-spacing: .1em;
+    padding: 10px;
+    color: gray;
+}
+
+
+/* -- end of stats section*/
+
+
+/* -- start of Contact us*/
+
+.contact-us {
+    background-image: linear-gradient(rgba(255, 255, 255, .1), rgba(255, 255, 255, 0.1)), url(images/fantasy-landscape-background-hd-1600x900-144100.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contact-us {
+    text-align: center;
+}
+
+.contact-us form input,
+.contact-us form textarea,
+.contact-us form button {
+    float: left;
+    border: none;
+}
+
+.contact-us form input {
+    height: 40px;
+    width: 200px;
+}
+
+.contact-us form .input2 {
+    margin-left: 50px;
+}
+
+.contact-us form textarea,
+.contact-us form button {
+    margin-top: 17px;
+}
+
+.contact-us form textarea,
+.contact-us form button {
+    clear: left;
+}
+
+.contact-us form textarea {
+    width: 450px;
+}
+
+.contact-us form textarea::placeholder,
+.contact-us form input::placeholder {
+    padding-top: 10px;
+    padding-left: 10px;
+    color: black;
+    /* opacity: 1; */
+}
+
+.contact-us form textarea:placeholder-shown,
+.contact-us form input:placeholder-shown {
+    opacity: .75;
+}
+
+.contact-us .section-body,
+.contact-us form input {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/**/
+
+.contact-us .map {
+    flex-basis: 38%;
+}
+
+.contact-us form {
+    flex-basis: 38%;
+    justify-content: space-evenly;
+}
+
+
+/**/
+
+
+/* -- end of Contact us*/
+
+
+/* ++ start of footer*/
+
+footer {
+    height: 50px;
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.copyright {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    flex-basis: 38%;
+    align-self: center;
+}
+
+.icons-wrapper {
+    flex-basis: 38%;
+}
+
+.icons {
+    flex-basis: 38%;
+    align-self: center;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icons div {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(120, 180, 50);
+    margin-left: 10px;
+    padding: 1px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+.icons div i {
+    vertical-align: middle;
+}
+
+.icons a {
+    color: black;
+}
+
+
+/* -- end of footer*/
