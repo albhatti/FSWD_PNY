@@ -1,0 +1,12 @@
+span i {
+    font-size: 30px;
+}
+
+.invoice_summary_table_body {
+    height: 50px;
+}
+
+.invoice_summary_table {
+    border-top: 2px solid skyblue;
+    border-bottom: 2px solid skyblue;
+}
