@@ -1,0 +1,25 @@
+body {
+    background-color: turquoise;
+}
+
+.box1 {
+    background-color: green;
+    font-size: 15px;
+    color: white;
+}
+
+.box2 {
+    background-color: white;
+    font-size: 15px;
+    color: green;
+}
+
+.span1 {
+    color: goldenrod;
+    font-weight: 600;
+}
+
+.span2 {
+    color: black;
+    font-weight: 600;
+}
