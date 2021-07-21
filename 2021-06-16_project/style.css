@@ -1,0 +1,47 @@
+/* .jumbotron {
+    width: ;
+    background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url(images/slider-bg.jpg);
+} */
+
+.all-caps {
+    text-transform: uppercase;
+}
+
+.italics {
+    font-style: italic;
+}
+
+
+/* .bg-img {
+    background-image: url(images/slider-b.jpg);
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.bg-img {
+    position: relative;
+    text-align: center;
+}
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    background-color: rgb(101, 94, 122);
+    color: white
+}
+
+.image-text2 {
+    color: blue
+}
+
+.great-ideas {
+    background-color: rgb(242, 242, 242);
+}
