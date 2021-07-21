@@ -1,2 +1,2 @@
 # FSWD_PNY
-My assignments for full stack web development
+My assignments while learning full stack web development
